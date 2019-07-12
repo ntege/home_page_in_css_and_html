@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bencsswebsite</title>
+	<style >
+		body{
+
+			background-color: rgba(27,31,34,0.85);
+			margin: 0;
+			padding: 0;
+			font-family: Arial;
+		}
+		h1{
+			font-size: 2.1rem;
+			line-height: 1.4;
+			letter-spacing: 0.5rem;
+			text-align: center;
+			color: white;
+			margin-top: 10px 
+		}
+
+		.maindiv{
+
+			width: 50%;
+			height: 400px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background-image: url(image/edmond.jpg);
+			background-size: 100% 100%; 
+			box-shadow: 1px 2px 10px 5px white;
+
+			animation: slider 9s infinite linear;
+		}
+
+		@keyframes slider{
+
+				0%{ background-image: url(image/edmond.jpg); }
+				35%{ background-image: url(image/gaby.jpg); }
+				75%{ background-image: url(image/wandie.jpg); }
+
+		}
+		nav{
+
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height:100px;
+			padding: 10px 90px;
+			box-sizing: border-box;
+			background:rgba(0,0,0,0.5);
+		}
+		nav .logo{
+			padding: 22px 20px;
+			height: 80px;
+			float: left;
+			font-size:24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff; 
+		}
+
+		nav ul{
+
+			list-style: none;
+			float: right;
+			margin: 80;
+			padding: 0;
+			display: flex;
+		}
+        
+         nav ul li a{
+
+         	line-height: 80px;
+         	color: #fff;
+         	padding: 20px 50px;
+         	text-decoration: none;
+         	text-transform: uppercase;
+         	font-size: 15px;
+         	font-weight: bold;
+
+         }
+         nav ul li a:hover{
+         	background: rgba(0,0,100,0.5);
+         	border-radius: 6px;
+         }
+         nav ul li a.active{
+         		background:rgba(0,0,100,0.5);
+         		color: #fff;
+         		border-radius: 6px;
+         }
+         .wrapper{
+         	width: 1170px;
+         	margin: 70px auto;
+         	background: #eee;
+         	margin-top: 20px;
+         }
+         .hack-team{
+
+         	width: 28%;
+         	float: left;
+         	margin: 15px;
+         	box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+         	padding: 15px;
+         	color: #fff;
+         	background: #262626;
+         	border-radius: 15px; 
+
+         }
+         .hack-team img{
+
+         	width: 150px;
+         	height: 150px;
+         	border-radius: 50%;
+         	float:left;
+         	margin: 40px 20px 30px 0;
+         	border:5px solid #fff;
+         	shape-outside: circle();
+         }
+         h2{
+         	font-family: Audiowide;
+         }
+         p{
+         	text-align: justify;
+         	line-height: 15px;
+         }
+
+         .middlecontainer{
+
+         	background-color: #fff;
+         	padding: 200px;
+         	margin-top: 500px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+       		margin-left: 80px;
+         	margin-right: 80px;
+         	
+         }	
+         .middlecontainer h2{
+
+
+         	text-align: center;
+         	margin-top: -190px;
+         	font-weight: bold;
+         	color: blue;
+         	font-size: 40px;
+         	text-decoration: underline #000;
+
+
+         }
+
+         .wrapper2{
+         	width: 1170px;
+         	margin: 70px auto;
+         	background: #eee;
+         	margin-top: -350px;
+         }
+         .work-team{
+
+         	width: 28%;
+         	float: left;
+         	margin: 15px;
+         	box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+         	padding: 15px;
+         	color: #fff;
+         	background: #262626;
+         	/*border-radius: 15px; */
+
+         }
+         .work-team img{
+
+         	width: 150px;
+         	height: 150px;
+         	border-radius: 50%;
+         	float:left;
+         	margin: 40px 20px 30px 0;
+         	border:5px solid #fff;
+         	shape-outside: circle();
+         }
+         h4{
+         	font-family: Audiowide;
+
+         }
+         p{
+         	text-align: justify;
+         	line-height: 15px;
+         }
+
+         #footer{
+         	clear: both;
+         	padding: 20px;
+         	background:rgba(0,0,0,0.5);
+         	color: white;
+         	text-align: right;
+
+         }
+         #footer img{
+
+         }
+         
+         
+	</style>
+</head>
+<body>
+
+<h1>HACKSHADE TECHS INTERNSHIP</h1>
+	<div class="wrap">
+		<nav>
+			<div class="logo"><img src="image/damu.jpg"></div>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">OnLineClass</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact Us</a></li>
+
+			</ul>
+
+		</nav>
+
+
+	</div>
+	<div class="middlecontainer">
+		<h2>What We Do</h2>
+	</div>
+	<div class="wrapper2">
+	<div class="work-team">
+		<img src="image/ittraining.jpg" alt="">
+		<h3>Internship Programs</h3>
+		<p>We Give Our Interns The best of the best skills required on the job market , we stricktly teach you hands on
+		thats why in the field of IT our interns are prefered by the best corporations and organisations</p>
+
+	</div>
+	<div class="hack-team">
+		<img src="image/digitalmk.jpg" alt="">
+		<h3>Digital Marketing Platform</h3>
+		<p>We help you sell your product online thus maximising your sells, your clients will get the feed back that you want them to get in order to interact with them effeciently we will advertise your product beyond borders</p>
+
+	</div>
+	<div class="hack-team">
+		<img src="image/onlinecource3.jpg" alt="">
+		<h3>Online Classes</h3>
+		<p>We have the best online classes where we teach you when you are seated at your dinning table over a cup of coffee we believe that we are everywhere as long as you reach our websiste we will be with you.
+		we will teach you programing and graphic designing online</p>
+
+	</div>
+<p>.......................................................</p>
+
+		
+
+	
+<div class="maindiv"></div>
+<div class="wrapper">
+	<div class="hack-team">
+		<img src="image/ceowandie.jpg" alt="">
+		<h2>CEO Wanran</h2>
+		<p>Wandie Innocets a UI/UX expert founder of Hackshade ,Founder of Wanran and also Co-Founder of XanderTech
+		he is a hardworking person and his hobby is looking at his computer .He solves problems using his computer</p>
+
+	</div>
+	<div class="hack-team">
+		<img src="image/muchureloaded.jpg" alt="">
+		<h2>FA Hackshade</h2>
+		<p>Gilbert Muchunguzi  is a network administrator and the finacial administrator at hackshade
+		he is a hardworking person and his hobby is photography he is also a youth leader .He solves problems using his computer</p>
+
+	</div>
+	<div class="hack-team">
+		<img src="image/supervisor.jpg" alt="">
+		<h2>CEO Kampala real</h2>
+		<p>Ntege Ben is a software developer and a Motivational speaker his life rotates around media because he believe that if you combine Media and your mind later in life you get Money, His hobby is to change peoples lives by motivating them</p>
+
+	</div>
+
+
+
+</div>
+
+<div  id="footer">
+	
+	Copyright &copy; 2019 Ben Ntege .
+
+</div>
+<img src="image/siteicon1.jpg" padding = "10px"> Hackshade         <img src="image/whatsapp.jpg" padding = "10px">  0701301762         <img src="image/youtube.jpg" padding = "10px"> Hackshade Techs         <img src="image/huwai.jpg" padding = "10px"> Main Sponsor         <img src="image/kryt2.jpg" padding = "10px"> Kampala Real          <img src="image/wanran.jpg" padding = "10px"> Wanran Inc           <img src="image/leakup.jpg" padding = "10px"> Leekap Enterprise Ltd
+
+	
+
+</body>
+</html>
